@@ -5,34 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visa Pathfinders - Expert Visa Guidance</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="https://via.placeholder.com/150x50?text=Visa+Pathfinders" alt="Visa Pathfinders Logo" class="logo">
-        </div>
         <h1>Visa Pathfinders</h1>
         <p>Your trusted virtual guide for visa applications!</p>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#query-form">Query Form</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <section class="services-info">
+        <section id="services" class="services-info">
             <h2>Our Services</h2>
-            <p>🌟 Expert guidance for USA, Australia, Canada & Schengen visas!</p>
-            <ul>
-                <li>Tourist & Study Visas 🇺🇸</li>
-                <li>Appointment Booking 📅</li>
-                <li>Application Assistance 📝</li>
-                <li>Interview Preparation 🎤</li>
-                <li>Australia Lottery Ballots 🎟️</li>
-                <li>College Applications in Canada 🍁</li>
-                <li>Work/Study in Germany & Greece 🇩🇪🇬🇷</li>
-            </ul>
-            <p>💻 Virtual consultations available via Zoom/Google Meet!</p>
-            <p>⚠️ Some services may incur charges. Contact us for personalized assistance!</p>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>USA Visa Services</h3>
+                    <ul>
+                        <li>Tourist Visa Assistance</li>
+                        <li>Study Visa Guidance</li>
+                        <li>Visa Appointment Booking</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Canada Visa Services</h3>
+                    <ul>
+                        <li>Study Visa Applications</li>
+                        <li>Assistance in Changing Colleges</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Australia Visa Services</h3>
+                    <ul>
+                        <li>Study Visa Guidance</li>
+                        <li>Work and Holiday Subclass Visa</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Schengen Visa Services</h3>
+                    <ul>
+                        <li>Greece Work Permits</li>
+                        <li>Germany Study Visa</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Virtual consultations available via Zoom/Google Meet!</p>
+            <p>Some services may incur charges. Contact us for personalized assistance!</p>
         </section>
 
-        <section class="query-form">
+        <section id="query-form" class="query-form">
             <h2>Send Us a Query via WhatsApp</h2>
             <form id="queryForm">
                 <label for="name">Your Name:</label>
@@ -71,7 +96,18 @@
                     <option value="USA">USA</option>
                     <option value="Canada">Canada</option>
                     <option value="Australia">Australia</option>
-                    <option value="Schengen Area">Schengen Area (Europe)</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Germany">Germany</option>
+                </select>
+
+                <label for="serviceType">Service Type:</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="">Select service</option>
+                    <option value="Tourist Visa">Tourist Visa</option>
+                    <option value="Study Visa">Study Visa</option>
+                    <option value="Work Visa">Work Visa</option>
+                    <option value="Visa Appointment">Visa Appointment</option>
+                    <option value="Other">Other</option>
                 </select>
 
                 <label for="query">Your Query:</label>
@@ -81,11 +117,11 @@
             </form>
         </section>
 
-        <section class="contact-info">
+        <section id="contact" class="contact-info">
             <h2>Contact Us</h2>
-            <p>📞 Call: +1 437 808 4110 | +91 781 442 2369</p>
-            <p>📧 Email: workpayal2@gmail.com</p>
-            <p>💬 Connect via WhatsApp: 
+            <p>Call: +1 437 808 4110 | +91 781 442 2369</p>
+            <p>Email: workpayal2@gmail.com</p>
+            <p>Connect via WhatsApp: 
                 <a href="https://wa.me/917814422369" target="_blank" class="whatsapp-button">Click here</a>
             </p>
         </section>
