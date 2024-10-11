@@ -64,10 +64,8 @@
             <p>Some services may incur charges. Contact us for personalized assistance!</p>
         </section>
 
-        <!-- Updated Query Form Section -->
         <section id="query-form" class="query-form">
             <h2>Send Us a Query via WhatsApp</h2>
-            <p>Please fill out the form below, and we will get back to you as soon as possible.</p>
             <form id="queryForm">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -83,63 +81,81 @@
                     <option value="">Select status</option>
                     <option value="Single">Single</option>
                     <option value="Married">Married</option>
-                    <!-- Other options -->
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                    <option value="Separated">Separated</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
                 </select>
 
-                <!-- Other form fields remain unchanged -->
+                <label for="education">Highest Level of Education:</label>
+                <select id="education" name="education" required>
+                    <option value="">Select education level</option>
+                    <option value="High School">High School</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Doctorate">Doctorate</option>
+                    <option value="Other">Other</option>
+                </select>
 
-                <!-- Submit button -->
+                <label for="countryPreference">Preferred Country for Visa:</label>
+                <select id="countryPreference" name="countryPreference" required>
+                    <option value="">Select country</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Germany">Germany</option>
+                </select>
+
+                <label for="serviceType">Service Type:</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="">Select service</option>
+                    <option value="Tourist Visa">Tourist Visa</option>
+                    <option value="Study Visa">Study Visa</option>
+                    <option value="Work Visa">Work Visa</option>
+                    <option value="Visa Appointment">Visa Appointment</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="query">Your Query:</label>
+                <textarea id="query" name="query" required></textarea>
+
                 <button type="submit">Send Query via WhatsApp</button>
             </form>
         </section>
 
-        <!-- Updated Contact Section -->
         <section id="contact" class="contact-info">
             <h2>Contact Us</h2>
-
-            <!-- Contact Information -->
             <div class="contact-grid">
-                <!-- Payal's Information -->
                 <div class="contact-item">
-                    Payal<br />
-                    Phone: +1 437 808 4110 | +91 781 442 2369
+                    <h3>Payal</h3>
+                    <p>📞 +1 437 808 4110 | +91 781 442 2369</p>
                 </div>
-
-                <!-- Mohit's Information -->
                 <div class="contact-item">
-                    Mohit Galhotra<br />
-                    Phone: +91 83600 21142
+                    <h3>Mohit Galhotra</h3>
+                    <p>📞 +91 83600 21142</p>
                 </div>
-
-                <!-- Location Information -->
                 <div class="contact-item">
-                    Location: India, Canada
+                    <h3>Location</h3>
+                    <p>🌍 India, Canada</p>
                 </div>
-
-                <!-- Email and WhatsApp Links -->
                 <div class="contact-item">
-                    Connect via WhatsApp: 
-                    📱 
-                    <a href="https://wa.me/917814422369" target="_blank" class="whatsapp-button">Click here</a><br />
-                    
-                    Email: 
-                    📧 
-                    workpayal2@gmail.com
+                    <h3>Get in Touch</h3>
+                    <p>
+                        📱 <a href="https://wa.me/917814422369" target="_blank" class="whatsapp-button">WhatsApp</a>
+                    </p>
+                    <p>
+                        📧 <a href="mailto:workpayal2@gmail.com">workpayal2@gmail.com</a>
+                    </p>
                 </div>
-
             </div>
-
         </section>
-
     </main>
 
-    <!-- Footer Section -->
     <footer>
-        &copy; 2024 Visa Pathfinders. All Rights Reserved.
+        <p>&copy; 2024 Visa Pathfinders. All Rights Reserved.</p>
     </footer>
 
-    <!-- Link to JavaScript File -->
     <script src="script.js"></script>
-
 </body>
 </html>
