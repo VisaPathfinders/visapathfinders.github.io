@@ -84,31 +84,22 @@ h2 {
     margin-top: 0;
 }
 
-.service-grid {
+.service-grid, .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 }
 
-.service-item {
+.service-item, .contact-item {
     background-color: #f9f9f9;
     padding: 1rem;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-item:hover {
+.service-item:hover, .contact-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-
-.service-item h3 {
-    color: #003366;
-    margin-top: 0;
-}
-
-.service-item ul {
-    padding-left: 1.5rem;
 }
 
 form {
@@ -174,7 +165,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .service-grid {
+    .service-grid, .contact-grid {
         grid-template-columns: 1fr;
     }
 }
