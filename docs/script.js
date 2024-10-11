@@ -7,9 +7,9 @@ document.getElementById('queryForm').addEventListener('submit', function(e) {
     var maritalStatus = document.getElementById('maritalStatus').value;
     var education = document.getElementById('education').value;
     var countryPreference = document.getElementById('countryPreference').value;
+    var serviceType = document.getElementById('serviceType').value;
     var query = document.getElementById('query').value.trim();
     
-    // Create the WhatsApp message
     var message = "New Query:\n" +
                   "Name: " + name + "\n" +
                   "Email: " + email + "\n" +
@@ -17,11 +17,9 @@ document.getElementById('queryForm').addEventListener('submit', function(e) {
                   "Marital Status: " + maritalStatus + "\n" +
                   "Education: " + education + "\n" +
                   "Preferred Country: " + countryPreference + "\n" +
+                  "Service Type: " + serviceType + "\n" +
                   "Query: " + query;
 
-    // Create the WhatsApp URL
     var whatsappUrl = "https://wa.me/917814422369?text=" + encodeURIComponent(message);
-    
-    // Open WhatsApp with the pre-filled message
     window.open(whatsappUrl, '_blank');
 });
